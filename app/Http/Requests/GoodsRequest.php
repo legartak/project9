@@ -24,7 +24,7 @@ class GoodsRequest extends FormRequest
     {
         return [
             'goods_name' => ['required', 'string', 'max:255'],
-            'goods_description' => ['required', 'string', 'max:255'],
+            'goods_description' => ['required', 'string', 'max:500'],
             'category_id' => ['required', 'integer', 'min:1'],
             'goods_price' => ['required', 'decimal:1,2', 'min:0.25'],
         ];
